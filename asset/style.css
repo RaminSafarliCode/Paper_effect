@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 118, 72);
+}
+
+.paper {
+  position: relative;
+  width: 900px;
+  height: 200px;
+  background-color: white;
+  margin: 250px;
+}
+
+.portion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-top: 100px solid rgb(0, 118, 72);
+  border-left: 100px solid rgb(227, 227, 227);
+  transition: 0.3s;
+}
+
+.paper:hover .portion {
+  border-top: 125px solid rgb(0, 118, 72);
+  border-left: 125px solid rgb(207, 207, 207);
+}
